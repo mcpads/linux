@@ -5,19 +5,5 @@
     },
     "waitFor": "onCreateCommand",
     "onCreateCommand": "sudo apt update && sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison -y",
-    "postCreateCommand": "",
-    "customizations": {
-      "codespaces": {
-        "openFiles": [
-          "index.js"
-        ]
-      }
-    },
-    "portsAttributes": {
-      "3000": {
-        "label": "Application",
-        "onAutoForward": "openPreview"
-      }
-    },
-    "forwardPorts": [3000]
+    "postCreateCommand": ""
   }
