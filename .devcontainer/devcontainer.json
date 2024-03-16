@@ -4,6 +4,6 @@
       "cpus": 4
     },
     "waitFor": "onCreateCommand",
-    "onCreateCommand": "sudo apt update && sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison -y",
+    "onCreateCommand": "sudo apt update && sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison -y && git clone https://github.com/mcpads/vscode-linux-kernel.git /workspace/linux/.vscode",
     "postCreateCommand": ""
   }
